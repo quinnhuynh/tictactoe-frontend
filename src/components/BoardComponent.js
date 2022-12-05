@@ -15,7 +15,7 @@ export default function BoardComponent() {
     
     let getUser = () => {
         let icon = undefined;
-        if(currentGameState.game) {
+        if(currentGameState?.game) {
             icon = currentGameState.game.players
             .indexOf(currentGameState.uuid) + 1;
         }
